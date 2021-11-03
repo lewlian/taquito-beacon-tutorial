@@ -3,6 +3,8 @@
 	"version": "1.0.0",
 	"description": "Tutorial to create a Tezos dapp with Taquito and the Beacon SDK",
 	"main": "index.js",
+	"type": "module",
+	"proxy": "http://localhost:3000",
 	"scripts": {
 		"dev": "parcel index.html",
 		"build": "parcel build index.html"
@@ -18,6 +20,7 @@
 	"dependencies": {
 		"@taquito/beacon-wallet": "^6.3.1-beta.0",
 		"@taquito/taquito": "^6.3.1-beta.0",
+		"axios": "^0.24.0",
 		"babel-polyfill": "^6.26.0"
 	},
 	"devDependencies": {
